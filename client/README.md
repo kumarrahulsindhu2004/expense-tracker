@@ -1,16 +1,107 @@
-# React + Vite
+# 💰 ExpensifyAI – Smart Expense Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack expense tracking application built using the MERN stack (MongoDB, Express, React, Node.js).
 
-Currently, two official plugins are available:
+This application allows users to register, manage their expenses, track monthly targets, and analyze spending through interactive dashboards.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Frontend (Netlify):  
+https://expensifyaitracker.netlify.app/
 
-## Expanding the ESLint configuration
+Backend (Render):  
+https://expense-tracker-backend-rcnh.onrender.com/
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📌 Project Overview
+
+ExpensifyAI is a full-stack web application designed to help users:
+
+- Track daily expenses
+- Monitor monthly spending
+- Set financial targets
+- Analyze category-wise expense breakdown
+- Get alerts when monthly target is exceeded
+
+The application demonstrates:
+- Frontend development with React
+- Backend API development using Node.js & Express
+- Secure authentication using JWT
+- MongoDB database integration
+- Aggregation queries for analytics
+- Production deployment
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React (Vite)
+- Tailwind CSS
+- Recharts (for analytics charts)
+- Axios (API communication)
+- React Router
+
+### Backend
+- Node.js
+- Express.js
+- JWT Authentication
+- Bcrypt (password hashing)
+- Mongoose (MongoDB ORM)
+
+### Database
+- MongoDB Atlas (Cloud Database)
+
+### Hosting
+- Backend → Render
+- Frontend → Netlify
+
+---
+
+## ✨ Features Implemented
+
+### 🔐 Authentication
+- User Registration
+- User Login
+- JWT-based protected routes
+- Secure password hashing
+
+### 💵 Expense Management
+- Add Expense
+- Edit Expense
+- Delete Expense
+- Filter by Category
+- Search by Title
+- Pagination
+
+### 📊 Dashboard Analytics
+- Total Spent Calculation (Aggregation)
+- Category-wise Summary (Aggregation)
+- Monthly Expense Summary
+- Transaction Count
+- Main Category Detection
+- Monthly Target Exceeded Warning
+
+### 📱 Responsive UI
+- Mobile-friendly layout
+- Adaptive grid design
+- Clean modern UI using Tailwind
+
+---
+
+## 🗄️ Database Schema
+
+### User Model
+
+```js
+{
+  name: String,
+  email: String,
+  password: String (hashed),
+  monthlySalary: Number,
+  monthlyTarget: Number,
+  timestamps: true
+}
