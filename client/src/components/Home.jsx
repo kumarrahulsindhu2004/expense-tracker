@@ -10,7 +10,8 @@ function Home() {
         {/* Left Content */}
         <div>
           <span className="inline-block bg-indigo-100 text-indigo-600 px-4 py-1 rounded-full text-sm mb-4">
-            Gemini AI Integration Now Live
+            <p>Email : demo@gmail.com</p>
+            <p>Password : demo123</p>
           </span>
 
           <h1 className="text-5xl font-bold text-gray-900 leading-tight">
